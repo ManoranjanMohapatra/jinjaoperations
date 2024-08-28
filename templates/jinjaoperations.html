@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+         <h1>I'm writing conditional statements using jinja operational tags</h1>
+        {% if a > b %}
+           <h1> {{a}} is greater than {{b}} </h1>
+        {% endif %} 
+
+         <h1>I'm writing if else statements using jinja operational tags</h1>
+        {% if a > b %}
+           <h1> {{a}} is greater than {{b}} </h1>
+        {% else %}
+            <h1> {{b}} is greater than {{a}}</h1>
+        {% endif %}  
+
+        <h1>I'm writing if elif else statements using jinja operational tags</h1>
+        {% if a > b and a > c %}
+           <h1> {{a}} is greater than {{b}} and {{c}} </h1>
+        {% elif b > a and b > c %}
+            <h1> {{b}} is greater than {{a}} and {{c}}</h1>
+        {% else %}
+            <h1>{{c}} is greater than {{a}} and {{b}}</h1>
+        {% endif %}   
+
+        <h1>I'm writing nested-if statements using jinja operational tags</h1>
+        {% if a > b %}
+            {% if a > c %}
+             <h1>{{ a }} is the greatest value among {{ a }}, {{ b }}, and {{ c }}</h1>
+             {% else %}
+             <h1>{{ c }} is the greatest value among {{ a }}, {{ b }}, and {{ c }}</h1>
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+             <h1>{{ b }} is the greatest value among {{ a }}, {{ b }}, and {{ c }}</h1>
+            {% else %}
+             <h1>{{ c }} is the greatest value among {{ a }}, {{ b }}, and {{ c }}</h1>
+             {% endif %}
+        {% endif %}
+    </center>
+
+</body>
+</html>
