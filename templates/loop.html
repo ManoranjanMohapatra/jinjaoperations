@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>loop</h1>
+    {% for i in name %}
+        <h1>i</h1> 
+        <h1> {{i}} </h1>
+    {% endfor %}  
+
+    {% for i in mobile %}
+    i
+    {{i}}
+    <h1> {{i}} </h1>
+    {% endfor %} 
+    </center>
+    <h1><a href="{% url 'operations' %}">we are navigating from loop.html page to jinjaoperations.html page</a>
+   </h1>
+</body>
+</html>

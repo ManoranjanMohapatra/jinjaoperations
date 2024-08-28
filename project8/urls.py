@@ -20,4 +20,5 @@ from jinjaoperation.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('operations/',operations,name='operations'),
+    path('loop/',loop,name='loop'),
 ]
